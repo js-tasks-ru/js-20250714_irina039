@@ -1,3 +1,3 @@
-function Hello(){
-    alert( 'Привет, мир!' );
+function SendMes(){
+    alert( 'Я JavaScript!' );
 }
