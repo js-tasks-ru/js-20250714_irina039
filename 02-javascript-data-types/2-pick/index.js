@@ -5,5 +5,10 @@
  * @returns {object} - returns the new object
  */
 export const pick = (obj, ...fields) => {
-
+    const newArr = Object.entries(obj);
+    return newArr.reduce((accumulator, current) => {
+        let [key, value] = current;
+        if ( (fields.includes(key)) == true ) accumulator[key] = value;
+        return accumulator;
+    }, {});
 };
